@@ -1,4 +1,4 @@
-** Net present value calculation
+** TODO Net present value calculation
    - [[./npv.jpg][NPV formula]]
 
    - Program takes the following inputs:::
@@ -9,5 +9,5 @@
      - NPV = -c0 + (c1) / (1+n/100) + (c1+d) / (1+n/100) ^ 2 
             + (c1+2d) / ( 1+n/100 ) ^ 3 and so on upto n years...
   
-** Internal rate of return calculation
+** TODO Internal rate of return calculation
 *** What discount rate will be needed to produce an NPV of 0 for the project
