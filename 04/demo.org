@@ -1,0 +1,13 @@
+* Put your vote
+** Draw horizontal bar charts showing votes Vs candidates
+   :LOGBOOK:
+   CLOCK: [2024-05-08 Wed 08:03]--[2024-05-08 Wed 08:15] =>  0:12
+   :END:
+** Use localstorage to persist data between sessions
+   :LOGBOOK:
+   CLOCK: [2024-05-08 Wed 08:15]--[2024-05-08 Wed 08:24] =>  0:09
+   :END:
+** Add regex to parse party & candidate names
+   :LOGBOOK:
+   CLOCK: [2024-05-08 Wed 08:24]--[2024-05-08 Wed 08:26] =>  0:02
+   :END:
