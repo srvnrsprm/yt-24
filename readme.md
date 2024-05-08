@@ -11,6 +11,6 @@
 ## Mar - Corp. Fin. - Calculate NPV & IRR for project proposals
 - Take returns' rate from the user and discount annual flows with that rate
 - Adjust returns' rate so that the NPV nearly equals to zero
-
-
-
+## May - Web application to vote for MP elections
+- A form on the left container pane that shows the MP choices
+- A horizontal bar chart on the right pane that visualizes candidates votes
