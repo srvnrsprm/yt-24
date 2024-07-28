@@ -38,6 +38,6 @@ class Irr {
         }
         irr = (Math.abs(npv) > Math.abs( lstNpv ) ? r-step : r ) * 100;
 
-        System.out.format( "The project's internal rate of return is %.0f \n", irr );
+        System.out.println( "The project's internal rate of return is " + irr );
     }
 }

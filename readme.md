@@ -14,3 +14,7 @@
 ## May - Web application to vote for MP elections
 - A form on the left container pane that shows the MP choices
 - A horizontal bar chart on the right pane that visualizes candidates votes
+## Jun - Conduct a TNPSC surprise script using bash script
+- select statement to display the questions & take choice inputs
+- array indexing to store the keys entered and evaluate results
+- color codes escape sequences to display results in green/red

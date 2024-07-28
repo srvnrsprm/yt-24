@@ -36,7 +36,16 @@ END {
 
 #+BEGIN_SRC awk :stdin mughal_kings
 {
-  years = substring( $2, 5, 4 ) - substring( $2, 1, 4 )
+  years = substr( $2, 6, 4 ) - substr( $2, 1, 4 )
   print $1, years
 }
 #+END_SRC
+
+#+RESULTS:
+| King      |  0 |
+| Babur     |  4 |
+| Humayun   | 26 |
+| Akbar     | 49 |
+| Jahangir  | 22 |
+| Shahjahan | 30 |
+| Aurangzeb | 49 |
