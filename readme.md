@@ -1,6 +1,6 @@
 
 # Table of Contents
-These code stuff are the scaffolding stuff for the videos you can see [https://youtube.com/@bmbyacdmy](here)
+These code stuff are the scaffolding stuff for the videos you can see [here](https://youtube.com/@bmbyacdmy)
 ## Jan  - Add & Delete student records using HTMLTableElement interface
 - A form to take student's first name and second name
 - On submit, the new student is added to the table on the right
