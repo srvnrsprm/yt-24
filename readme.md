@@ -18,3 +18,11 @@ These code stuff are the scaffolding stuff for the videos you can see [here](htt
 - select statement to display the questions & take choice inputs
 - array indexing to store the keys entered and evaluate results
 - color codes escape sequences to display results in green/red
+## Oct - Harvest the numbers at the edges using libre calc
+- Use inbuilt regex( input, regex, replacement, flags )
+- roll out our own substitute function to collect only numbers
+- more advanced function to search for numbers in words as well
+## Nov - Two select boxes in java awt for country & city
+- You need to choose a city in a country
+- Choosing a different country empties the cities box and reloads them
+- A canvas is added inside the frame to display the user choices
