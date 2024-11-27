@@ -1,0 +1,23 @@
+#+TITLE: Corporate Finance 
+#+OPTIONS: html-postamble:nil
+
+
+* TODO Net present value calculation
+   - [[./npv.jpg][NPV formula]]
+ 
+
+   - Program takes the following inputs:::
+     - Enter the initial investment, c0
+     - Enter the cash inflow at year1, c1
+     - Enter cash incremental flow from year2 onwards, d
+     - Number of years the project will run, n
+     - NPV = -c0 + (c1) / (1+n/100) + (c1+d) / (1+n/100) ^ 2 
+       + (c1+2d) / ( 1+n/100 ) ^ 3 and so on upto n years...
+     - 
+	   
+  
+* TODO Internal rate of return calculation
+** What discount rate will be needed to produce an NPV of 0 
+
+
+

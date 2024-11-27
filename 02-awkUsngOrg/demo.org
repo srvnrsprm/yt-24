@@ -1,0 +1,51 @@
+#+NAME: accounts
+| Person    | Balance |
+|-----------+---------|
+| Arun      |    1000 |
+| Badri     |    2000 |
+| Caarthik  |    3000 |
+| Damodaran |    4000 |
+
+#+BEGIN_SRC awk :stdin accounts
+{
+  tot += 0.07*$2
+  print $1, $2, 0.07*$2
+}
+END {
+  printf "%s -%s %d", "TotalInterest", "-", tot
+}
+#+END_SRC
+
+#+RESULTS:
+| Person        | Balance |   0 |
+| Arun          |    1000 |  70 |
+| Badri         |    2000 | 140 |
+| Caarthik      |    3000 | 210 |
+| Damodaran     |    4000 | 280 |
+| TotalInterest |      -- | 700 |
+
+#+NAME: mughal_kings
+| King      |     Ruled |
+|-----------+-----------|
+| Babur     | 1526-1530 |
+| Humayun   | 1530-1556 |
+| Akbar     | 1556-1605 |
+| Jahangir  | 1605-1627 |
+| Shahjahan | 1628-1658 |
+| Aurangzeb | 1658-1707 |
+
+#+BEGIN_SRC awk :stdin mughal_kings
+{
+  years = substr( $2, 6, 4 ) - substr( $2, 1, 4 )
+  print $1, years
+}
+#+END_SRC
+
+#+RESULTS:
+| King      |  0 |
+| Babur     |  4 |
+| Humayun   | 26 |
+| Akbar     | 49 |
+| Jahangir  | 22 |
+| Shahjahan | 30 |
+| Aurangzeb | 49 |
