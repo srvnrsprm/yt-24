@@ -3,12 +3,14 @@ import java.awt.*;
 import java.awt.event.*; 
 
 class Cties extends Frame implements ItemListener {
-	java.awt.List cntriesLst, ctiesLst;
-	MyCanvas cc;
-	static HashMap<String,String[]> hm;
+	java.awt.List cntriesLst = new java.awt.List(), ctiesLst = new java.awt.List();
+	MyCanvas cc = new MyCanvas();
+	Label cntriesLbl = new Label( "Choose your country" );
+	Label ctiesLbl = new Label( "Choose your city" );
+	Label ccLbl = new Label( "So, let us book tickets to " );
+	static HashMap<String,String[]> hm = new HashMap<String, String[]>();;
 
 	public void makeCtyMap( ) {
-		hm = new HashMap<String, String[]>();
 		String cties[] = { "Sydney", "Melbourne", "Canberra", "Perth", "Brisbane" };
 		hm.put( "Australia", cties );
 		String cties1[] = { "Paris", "Lyons", "Nice", "Brisbane" };
@@ -34,24 +36,26 @@ class Cties extends Frame implements ItemListener {
 	}
 
 	public Cties() {
-		setSize( 300, 300 );
+		setTitle( "Vacation Chooser" );
+		setSize( 300, 600 );
 		setVisible( true );
-		setLocation( 200, 200 );
+		setLocation( 400, 200 );
 		addWindowListener( new WindowAdapter() {
 				public void windowClosing( WindowEvent e ) {
 					System.exit( 0 );
 				}
 		});
 		makeCtyMap( );
-		Set<String>cntries = hm.keySet();
-		cntriesLst = new java.awt.List();
-		ctiesLst = new java.awt.List();
+		Set<String> cntries = hm.keySet();
 		for( String s : cntries ) 
 			cntriesLst.add( s );
-		setLayout( new GridLayout(3,1) );
-		cc = new MyCanvas();
+		//cntriesLst.select( 1 );
+		setLayout( new GridLayout(6,1) );
+		add( cntriesLbl );
 		add( cntriesLst );
+		add( ctiesLbl );
 		add( ctiesLst );
+		add( ccLbl );
 		add( cc );
 		cntriesLst.addItemListener( this );
 		ctiesLst.addItemListener( this );

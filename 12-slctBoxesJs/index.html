@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Holiday Planner</div>
+      <form onsubmit="return false">
+	<fieldset>
+	  <legend>Holiday planner</legend>
+	  <label>select your fav. country
+	    <select name="cntry" onchange="addOptions(ctiesMp[this.value])"></select>
+	  </label>
+	  <label>select your fav. city
+	    <select name="cty" onchange="shwDlg()"></select>
+	  </label>
+	</fieldset>
+      </form>
+    </div>
+    <dialog id="dlg">
+      <button onclick="this.parentNode.close()">Close</button>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html> 
