@@ -34,7 +34,7 @@ END {
 | Shahjahan | 1628-1658 |
 | Aurangzeb | 1658-1707 |
 
-#+BEGIN_SRC awk :stdin mughal_kings
+#+BEGIN_SRC awk :stdin mughal_kings :colnames nil
 {
   years = substr( $2, 6, 4 ) - substr( $2, 1, 4 )
   print $1, years

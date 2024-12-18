@@ -26,3 +26,7 @@ These code stuff are the scaffolding stuff for the videos you can see [here](htt
 - You need to choose a city in a country
 - Choosing a different country empties the cities box and reloads them
 - A canvas is added inside the frame to display the user choices
+## Dec - Two select boxes in web browser for country & city
+- You need to choose a city in a country
+- Choosing a different country empties the cities box and reloads them
+- You choose a city. Now, a dialog box appears showing your vacation destination
